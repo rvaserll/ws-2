@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: clamp(12px, 1vw + 0.5vh, 18px);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  min-height: 230px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.box {
+  padding: 1em;
+  text-align: center;
+}
+
+.box1,
+.box7 {
+  background: #dae6f6;
+}
+
+.box2,
+.box6 {
+  background: #f2f6e8;
+}
+
+.box3 {
+  background: white;
+}
+
+.box4,
+.box5 {
+  background: #f8ece2;
+}
+
+.box1,
+.box7 {
+  width: 100%;
+  height: 7.4%;
+  position: relative;
+  min-height: 50px;
+}
+
+.middle {
+  width: 100%;
+  height: 85.2%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.middle::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-col {
+  width: 15%;
+  float: left;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.center-col {
+  float: left;
+  height: 100%;
+  width: 70%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box4 {
+  width: 15%;
+  float: right;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.box4 p{
+  margin-top: 20%;
+}
+
+.box2 {
+  height: 7.5%;
+  display: table;
+  width: 100%;
+}
+
+.box5 {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+}
+
+.box5 .navigation {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.box5 .navigation ul {
+  padding: 0;
+  text-align: left;
+  margin-bottom: 30%;
+  margin-left: 15%;
+}
+
+.box3 {
+  width: 100%;
+  height: calc(100% - 58px);
+  display: table;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box3>div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.box3 h2 {
+  font-weight: bold;
+}
+
+.box3 ol {
+  display: inline-block;
+  text-align: left;
+  list-style-position: inside;
+  margin: 0;
+}
+
+.box6 {
+  width: 100%;
+  height: 58px;
+  display: table;
+  box-sizing: border-box;
+}
+
+.box6 p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.x,
+.y {
+  position: absolute;
+  padding: .2em .5em;
+  font-weight: bold;
+  font-size: clamp(16px, 2vw, 24px);
+}
+
+.x {
+  top: 10%;
+  right: 1%;
+}
+
+.y {
+  bottom: 10%;
+  right: 1%;
+}
+
+.box1 h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.box7 h3 {
+  margin: 0;
+  text-align: center;
+}
